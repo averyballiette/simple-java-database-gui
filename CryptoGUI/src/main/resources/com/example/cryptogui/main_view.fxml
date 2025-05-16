@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="com.example.cryptogui.controller.MainController"
+            xmlns:fx="http://javafx.com/fxml"
+            prefWidth="800" prefHeight="600">
+
+
+    <top>
+        <Label fx:id="titleLabel" text="CryptoProject Database Explorer"
+               style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-padding: 10px;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+
+
+    <center>
+        <TableView fx:id="resultsTable" prefHeight="400" />
+    </center>
+
+
+    <bottom>
+        <VBox spacing="10">
+            <Label text="Enter SQL Query:"/>
+            <TextArea fx:id="queryTextArea" prefRowCount="3" />
+
+            <HBox spacing="10">
+                <Button fx:id="runQueryButton" text="Run Query" onAction="#handleRunQuery" styleClass="button"/>
+                <Button fx:id="loadTransactionsButton" text="Load Transactions" onAction="#handleLoadTransactions" styleClass="button"/>
+                <Button fx:id="loadWalletsButton" text="Load Wallets" onAction="#handleLoadWallets" styleClass="button"/>
+                <Button fx:id="clearTableButton" text="Clear Table" onAction="#handleClearTable" styleClass="button"/>
+            </HBox>
+        </VBox>
+    </bottom>
+
+</BorderPane>

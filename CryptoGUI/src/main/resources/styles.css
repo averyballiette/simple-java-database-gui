@@ -1,0 +1,52 @@
+/* Overall App Styling */
+.root {
+    -fx-background-color: #f0f0f0;
+}
+
+
+#titleLabel {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3D7B9D;
+    -fx-padding: 10px;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #3D7B9D;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #2C5D7B;
+}
+
+.button:focused {
+    -fx-background-color: #1E4762;
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D1D1D1;
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-alignment: center;
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+ /* Text Area Styling */
+.text-area {
+    -fx-font-size: 14px;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D1D1D1;
+}
